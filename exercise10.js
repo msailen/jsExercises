@@ -3,32 +3,29 @@ var num1 = prompt("Enter first number ");
 var num2 = prompt("Enter second number ");
 var num3 = prompt("Enter third number ");
 
-console.log(num1,num2,num3);
-
-
 arrange(num1,num2,num3);
 
 function arrange(x,y,z){
 
     if (x>y && x>z){
         if(y>z){
-            console.log(x,y,z);
+            alert("The sorting is "+x+","+y+","+z);
         }else{
-            console.log(x,z,y);
+            alert("The sorting is "+x+","+z+","+y);
         }
     }
     if(y>x && y>z){
         if(x>z){
-            console.log(y,x,z);
+            alert("The sorting is "+y+","+x+","+z);
         }else{
-            console.log(y,z,x);
+            alert("The sorting is "+y+","+z+","+x);
         }
     }
     if(z>x && z>y){
         if(x>y){
-            console.log(z,x,y);
+            alert("The sorting is "+z+","+x+","+y);
         }else{
-            console.log(z,y,x);
+            alert("The sorting is "+z+","+y+","+x);
         }
     }
 
